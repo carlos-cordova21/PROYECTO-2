@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Proyecto 2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #e3e3e3;">
+    
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">DNS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="definicion.html">Definición</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Func.html">Funcionamiento</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link active" href="serv.html">Servidores DNS</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="bus.html">Pasos de búsqueda de DNS</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="tipos.html">Tipos de consulta de DNS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sol.html">Solucionador de DNS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="alm.html">Almacenamiento de cache de DNS</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div class="container marketing">
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Hay 4 servidores DNS implicados en la carga de un sitio web:<span class="text-muted"></span></h2>   <br>     
+        <p class="lead">Recursor de DNS: es como un bibliotecario al que se le pide que busque un libro determinado en la biblioteca. El recursor DNS es un servidor diseñado para recibir consultas desde equipos cliente mediante aplicaciones como navegadores web. Normalmente, el recursor será el responsable de hacer solicitudes adicionales para satisfacer la consulta de DNS del cliente.</p><br>
+        <p class="lead">Servidor de nombres raíz: es el primer paso para traducir (solucionar) los nombres de servidor legibles en direcciones IP. Se puede comparar a un índice en una biblioteca que apunta a diferentes estanterías de libros. Generalmente sirve como referencia de otras ubicaciones más específicas.</p><br>
+        <p class="lead">Servidor de nombres TLD: el servidor de dominio de nivel superior (TLD) se puede comparar con una estantería de libros en una biblioteca. Es el paso siguiente en la búsqueda de una dirección IP específica y aloja la última parte de un nombre de servidor (en ejemplo.com, el servidor TLD es "com").</p><br>
+        <p class="lead">Servidor de nombres autoritativo: se puede interpretar como un diccionario en una estantería de libros, en el que se puede consultar la definición de un nombre específico. El servidor de nombres autoritativo es la última parada en la consulta del servidor de nombres. Si cuenta con acceso al registro solicitado, devolverá la dirección IP del nombre del servidor solicitado al recursor de DNS (el bibliotecario) que hizo la solicitud inicial.</p>
+      </div>
+      <div class="col-md-5">
+        <div class="embed-responsive embed-responsive-21by9">
+            <video src="video/¿Cómo funciona el DNS_.mp4" class="object-fit-none" autoplay type="video/mp4" width="600" height="250"></video>
+          </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div>
+
+  <footer class="container">
+    <p class="float-end"><a href="index.html">Regresar al inicio</a></p>
+    <p>&copy; 2023 - Carlos Mario Díaz Córdova &middot; </p>
+  </footer>
+</main>
+</div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

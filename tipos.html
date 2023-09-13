@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Proyecto 2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #e3e3e3;">
+    
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">DNS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="definicion.html">Definición</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Func.html">Funcionamiento</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="serv.html">Servidores DNS</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link " href="bus.html">Pasos de búsqueda de DNS</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link active" href="tipos.html">Tipos de consulta de DNS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sol.html">Solucionador de DNS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="alm.html">Almacenamiento de cache de DNS</a>
+              </li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div class="container marketing">
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">¿Qué tipos de consultas de DNS hay?<span class="text-muted"></span></h2>   <br>     
+        <p class="lead">En una búsqueda de DNS habitual se producen tres tipos de consultas. Al usar una combinación de estas consultas, un proceso optimizado para la solución de DNS puede conllevar una reducción de la distancia recorrida. En una situación ideal, los datos de registro almacenados en la memoria caché estarán disponibles, lo cual permitirá que un servidor de nombres DNS devuelva una consulta no recursiva.</p><br>
+        <h2>3 tipos de consultas de DNS:</h2>
+        <p class="lead">Consulta recursiva: en una consulta recursiva, un cliente DNS requiere que un servidor DNS (generalmente un solucionador de DNS recursivo) responda al cliente con el registro del recurso solicitado o un mensaje de error si el solucionador no puede encontrar el registro.</p><br>
+        <p class="lead">Consulta iterativa: en esta situación, el cliente DNS permitirá que un servidor DNS devuelva la mejor respuesta posible. Si el servidor DNS consultado no cuenta con un nombre que corresponda con el de la consulta, devolverá una referencia a un servidor DNS autoritativo para un nivel inferior del espacio de nombres de dominio. El cliente DNS hará a continuación una consulta a la dirección de referencia. Este proceso continúa con servidores DNS adicionales que siguen en la cadena de consulta hasta que se produzca un error o se supere el tiempo de espera.</p><br>
+        <p class="lead">Consulta no recursiva: generalmente se produce cuando un cliente solucionador de DNS consulta a un servidor DNS por un registro al que tiene acceso porque o bien es autoritativo para el registro o el registro existe dentro de su caché. Generalmente, el servidor DNS almacenará en caché registros DNS para prevenir el consumo de ancho de banda adicional y la carga en los servidores que preceden en la cadena.
+
+        </p><br>
+      </div>
+      <div class="col-md-5">
+        <div class="embed-responsive embed-responsive-21by9">
+            <video src="video/tipos.mp4" class="object-fit-none" autoplay type="video/mp4" width="600" height="250"></video>
+          </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div>
+
+  <footer class="container">
+    <p class="float-end"><a href="index.html">Regresar al inicio</a></p>
+    <p>&copy; 2023 - Carlos Mario Díaz Córdova &middot; </p>
+  </footer>
+</main>
+</div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
